@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="new_choice" table="x_58872_needit_needit">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="u_price_1" table="x_58872_needit_needit">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes>omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>1</choice>
+        <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>My Girlfriend</column_label>
+        <column_label>New Price</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,14 +22,14 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>new_choice</element>
+        <element>u_price_1</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Price">price</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>20</max_length>
         <name>x_58872_needit_needit</name>
         <next_element/>
         <primary>false</primary>
@@ -47,16 +47,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-06-03 05:25:03</sys_created_on>
-        <sys_id>bd5dd1812fe030104accea5ef699b60f</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>My Girlfriend</sys_name>
+        <sys_created_on>2021-06-07 11:00:12</sys_created_on>
+        <sys_id>066013de2f2030104accea5ef699b6b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Price</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_dictionary_x_58872_needit_needit_new_choice</sys_update_name>
+        <sys_update_name>sys_dictionary_x_58872_needit_needit_u_price_1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-06-05 10:58:41</sys_updated_on>
+        <sys_updated_on>2021-06-07 11:00:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

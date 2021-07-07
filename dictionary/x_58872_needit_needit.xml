@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="6" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="3" default="Mehakuuu" label="New Choice" max_length="40" name="new_choice" type="string">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="9" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="My Girlfriend" max_length="40" name="new_choice" type="string">
             <choice>
-                <element inactive_on_update="false" label="Mehak" sequence="0" value="Mehakuuu"/>
-                <element inactive_on_update="false" label="Grarima" sequence="1" value="Garuuu"/>
-                <element inactive_on_update="false" label="Tanuu" sequence="2" value="Tanuu"/>
+                <element inactive_on_update="false" label="Mehak" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Grarima" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Tanuu" sequence="2" value="3"/>
             </choice>
         </element>
         <element label="New field 1" max_length="40" name="new_field_1" type="string"/>
         <element attributes="omit_sys_original=true" label="New Currency" max_length="20" name="u_new_currency" read_only="true" type="currency"/>
         <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="New Price" mandatory="true" max_length="20" name="u_new_price" type="price"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="New Price" max_length="20" name="u_price_1" type="price"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
                 <element inactive="true" inactive_on_update="true" label="Developer Enablement" sequence="0" value="dev_enable"/>
